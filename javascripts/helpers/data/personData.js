@@ -25,3 +25,11 @@ const persons = [
     { id: 'person24', name: 'Todd Spainhour', isDead: false },
     { id: 'person25', name: 'Zac Crumpton', isDead: true }
   ];
+
+
+const getAlivePersons = () => {
+    return persons.filter((x) => x.isDead === false);
+};
+
+
+export default { getAlivePersons };
