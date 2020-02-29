@@ -1,3 +1,7 @@
 body {
     background-color: burlywood;
 }
+
+.person-card {
+    margin-bottom: 15px;
+}
