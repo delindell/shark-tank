@@ -9,10 +9,18 @@ const sharkAttackEvent = () => {
     tank.tankBuilder()
 }
 
+const reviveEvent = (e) => {
+    const personId = e.target.id
+    personData.bringToLife(personId)
+    graveyard.buildGraveyard()
+    tank.tankBuilder()
+}
+
 const init = () => {
     graveyard.buildGraveyard()
     tank.tankBuilder()
     $('#bite-me').click(sharkAttackEvent)
+    $('body').on('click', '.revive-btn', reviveEvent)
 }
 
 
