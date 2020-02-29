@@ -1,6 +1,10 @@
 const printToDom = (divId, textToPrint) => {
-    const selectedDiv = document.getElementById(divId);
-    selectedDiv.innerHTML = textToPrint;
+    $(`#${divId}`).html(textToPrint);
+
+
+    //old way
+    // const selectedDiv = $(`#${divId}`)
+    // selectedDiv.html(textToPrint);
 }
 
 export default { printToDom }
